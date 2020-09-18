@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "249178819417",
+    "firebase_url": "https://erefugees-69f45.firebaseio.com",
+    "project_id": "erefugees-69f45",
+    "storage_bucket": "erefugees-69f45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249178819417:android:a99197d355ec50b8d49a48",
+        "android_client_info": {
+          "package_name": "com.example.erefugees"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "249178819417-7rg8kmes9vr2pjhcm7nd7kt6g0dblcmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjw9HOKiw7S93-ujiBzTlO-l3FOrTPr5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "249178819417-7rg8kmes9vr2pjhcm7nd7kt6g0dblcmn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

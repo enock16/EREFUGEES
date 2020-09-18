@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_courses"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/courses" />
+        <item
+            android:id="@+id/nav_exam"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/exam" />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/chat" />
+
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/video" />
+
+        <item
+            android:id="@+id/nav_blog"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/blog" />
+        <item
+            android:id="@+id/nav_certificate"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/certificate" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/profile" />
+    </group>
+</menu>

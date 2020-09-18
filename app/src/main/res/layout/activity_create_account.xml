@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".CreateAccount">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@color/white"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="@dimen/_70sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/first"
+            android:hint="@string/first"
+            android:textSize="@dimen/_16ssp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lastLayout"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@color/white"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="@dimen/_70sdp"
+        app:layout_constraintTop_toBottomOf="@+id/firstLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/last"
+            android:hint="@string/last"
+            android:textSize="@dimen/_16ssp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailLayout"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@color/white"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="@dimen/_70sdp"
+        app:layout_constraintTop_toBottomOf="@+id/lastLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/createEmail"
+            android:hint="@string/email"
+            android:textSize="@dimen/_16ssp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordLayout"
+        android:layout_width="match_parent"
+        app:endIconMode="password_toggle"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@color/white"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="@dimen/_70sdp"
+        app:layout_constraintTop_toBottomOf="@+id/emailLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/createPassword"
+            android:hint="@string/password"
+            android:textSize="@dimen/_16ssp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirmLayout"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@color/white"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="@dimen/_70sdp"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordConfirm"
+            android:hint="@string/password"
+            android:textSize="@dimen/_16ssp"
+            app:endIconMode="password_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/create"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:text="@string/createAcc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmLayout" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/loginReq"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
